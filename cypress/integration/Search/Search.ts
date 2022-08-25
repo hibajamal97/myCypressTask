@@ -4,9 +4,9 @@ import SearchAssertions from '../pageObjects/Search/assertions';
 
 Given('The user navigated to google site {string}', (url) => {
     //SearchActions.openGooglePage(url)
-    cy.visit('www.google.com')
+    cy.visit(url)
 });
-When('The user types {string}', (text) => {
+When('The user types {string} in the search field', (text) => {
    // SearchActions.typeSearchKeyAtSearchField(text)
    cy.get('.SDkEP').type(text);
 });
