@@ -4,7 +4,7 @@ class SearchActions{
         return this;
     }
     static typeSearchKeyAtSearchField(text){
-        cy.get('.gsfi').type(text);
+        cy.get('.SDkEP').type(text);
         return this;
     }
     static clickSearchBtn(){
